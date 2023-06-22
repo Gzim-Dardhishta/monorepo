@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task</title>
+
+    <style>
+        body {
+            background-color: #F6F7F9;
+        }
+
+        form {
+            width: fit-content;
+            margin: auto;
+            background-color: #fff;
+            margin-top: 10%;
+            padding: 3em;
+            border-radius: 3em;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        button {
+            border: none;
+            color: #fff;
+            background-color: #3563E9;
+            padding: .6em 1em;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div id="inputs">
+            <div class="input">
+                <input type="checkbox" name="internship" id="internship">
+                <label class="intern" for="internship">Internship</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" name="pabau" id="pabau">
+                <label class="pabau" for="pabau">Pabau</label>
+            </div class="input">
+            <div class="input">
+                <input type="checkbox" name="employment" id="employment">
+                <label class="employment" for="employment">Employment</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" name="career" id="career">
+                <label class="career" for="career">Career</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="shuffle">
+                <button type="button" onclick="handleShuffle()">Shuffle Values</button>
+            </div>
+            <div class="change">
+                <button type="button" onclick="changeValues()">Change Values</button>
+            </div>
+            <div class="checked">
+                <button type="button" onclick="checkedValues()">Show selected values</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
